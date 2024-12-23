@@ -1,0 +1,60 @@
+h1 {
+    color: green;
+    background-color: beige;
+    border: 2px solid darkgreen;
+    text-shadow: 2px 2px 4px gray;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+#title-2{
+    font-size: 2rem;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    text-align: center;
+
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* flex 활용 */
+/* .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+
+.item {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: 100vh;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.item{
+    background-color: brown;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
